@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ai.fritz.camera.LobbyActivity"
+    android:background="@drawable/bg_blue">
+
+    <TextView
+        android:id="@+id/lobby_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="98dp"
+        android:shadowColor="@color/shadow"
+        android:text="@string/title"
+        android:textColor="@color/title"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/lobby_logo"
+        android:layout_width="86dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/contentdescr_crosshair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lobby_title"
+        app:srcCompat="@drawable/ic_crosshair" />
+
+    <TextView
+        android:id="@+id/lobby_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:shadowColor="@color/shadow"
+        android:text="Waiting for players..."
+        android:textColor="@color/title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lobby_logo" />
+
+    <Button
+        android:id="@+id/lobby_settings_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="20dp"
+        android:alpha="80"
+        android:background="@color/transparent_background"
+        android:elegantTextHeight="false"
+        android:shadowColor="@color/shadow"
+        android:shadowRadius="10"
+        android:text="View Match Settings"
+        android:textColor="@color/title"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lobby_welcome" />
+
+    <Button
+        android:id="@+id/lobby_start_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:alpha="80"
+        android:background="@color/background"
+        android:elegantTextHeight="false"
+        android:shadowColor="@color/shadow"
+        android:shadowRadius="10"
+        android:text="Start Match"
+        android:textColor="@color/title"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lobby_settings_btn" />
+
+
+</android.support.constraint.ConstraintLayout>

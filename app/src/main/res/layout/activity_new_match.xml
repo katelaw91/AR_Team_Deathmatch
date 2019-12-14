@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ai.fritz.camera.NewMatchActivity"
+    android:background="@drawable/bg_blue">
+
+    <TextView
+        android:id="@+id/newmatch_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="98dp"
+        android:shadowColor="@color/shadow"
+        android:text="@string/title"
+        android:textColor="@color/title"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/newmatch_logo"
+        android:layout_width="86dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/contentdescr_crosshair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newmatch_title"
+        app:srcCompat="@drawable/ic_crosshair" />
+
+    <TextView
+        android:id="@+id/newmatch_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:shadowColor="@color/shadow"
+        android:text="New Match Settings..."
+        android:textColor="@color/title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newmatch_logo" />/>
+
+    <Button
+        android:id="@+id/newmatch_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:alpha="80"
+        android:background="@color/background"
+        android:elegantTextHeight="false"
+        android:shadowColor="@color/shadow"
+        android:shadowRadius="10"
+        android:text="Create Lobby"
+        android:textColor="@color/title"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newmatch_fence_btn" />
+
+
+    <TextView
+        android:id="@+id/newmatch_signout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/signout"
+        android:textColor="@color/hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newmatch_btn"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/settings_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:text="Score to Win"
+        android:textColor="@color/title"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newmatch_welcome" />
+
+    <EditText
+        android:id="@+id/settings_enterScore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Enter Value"
+        android:inputType="number"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/hint"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newmatch_welcome" />
+
+    <TextView
+        android:id="@+id/settings_friendlyFire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:text="Friendly Fire"
+        android:textColor="@color/title"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_score" />
+
+    <Switch
+        android:id="@+id/newmatch_setFriendlyFire"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="220dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_enterScore" />
+
+    <Button
+        android:id="@+id/newmatch_fence_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:alpha="80"
+        android:background="@color/background"
+        android:elegantTextHeight="false"
+        android:shadowColor="@color/shadow"
+        android:shadowRadius="10"
+        android:text="Set Match Boundaries"
+        android:textColor="@color/title"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_friendlyFire" />
+
+
+</android.support.constraint.ConstraintLayout>

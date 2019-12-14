@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AR Team Deathmatch</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="contentdesc_crosshair">crosshair</string>
+    <string name="title">AR Team Deathmatch</string>
+    <string name="login_namehint">Username</string>
+    <string name="login_passwordhint">Password</string>
+    <string name="login_loginbtn">Login</string>
+    <string name="login_forgotpassword">Forgotten Password?</string>
+    <string name="login_createnew">Create New Account</string>
+    <string name="contentdescr_crosshair">crosshair logo</string>
+    <string name="register_loginbtn">Create New User</string>
+    <string name="register_existing">Existing user?</string>
+    <string name="register_emailhint">Email</string>
+    <string name="mainmenu_newmatch">New Match</string>
+    <string name="mainmenu_lobby">Find Match</string>
+    <string name="signout">Signout?</string>
+    <string name="welcome">Welcome... 'username'</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
